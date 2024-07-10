@@ -1,0 +1,160 @@
+.welcomeBackAli {
+  margin: 0;
+  height: 46px;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.wavingHandEmoji {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.titleContent,
+.wavingHand,
+.welcomeTitle {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.wavingHand {
+  flex-direction: column;
+  padding: var(--padding-11xs) 0 0;
+  margin-left: -57px;
+}
+.titleContent,
+.welcomeTitle {
+  flex-direction: row;
+}
+.titleContent {
+  flex: 1;
+  padding: 0 var(--padding-13xl) 0 0;
+  flex-shrink: 0;
+}
+.welcomeTitle {
+  width: 277px;
+  height: 35px;
+  padding: 0 var(--padding-12xs);
+  box-sizing: border-box;
+}
+.heresWhatsHappening {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  color: var(--color-darkgray);
+  flex-shrink: 0;
+}
+.welcomeHeader {
+  width: 334px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.searchContentChild {
+  height: 44px;
+  width: 430px;
+  position: relative;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-100);
+  border: 1px solid var(--color-gray-100);
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+}
+.maskGroupIcon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  object-fit: contain;
+  z-index: 1;
+}
+.searchContent {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-100);
+  border: 1px solid var(--color-gray-100);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--padding-xs) var(--padding-base);
+  max-width: 100%;
+}
+.searchForAnything {
+  height: 46px;
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.searchBar,
+.searchInput,
+.searchPlaceholder {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.searchPlaceholder {
+  width: 256px;
+  flex-direction: row;
+  padding: 0 var(--padding-3xl);
+  box-sizing: border-box;
+  margin-top: -30px;
+}
+.searchBar,
+.searchInput {
+  flex-direction: column;
+  max-width: 100%;
+}
+.searchInput {
+  align-self: stretch;
+}
+.searchBar {
+  width: 430px;
+  padding: var(--padding-smi) 0 0;
+  box-sizing: border-box;
+  font-size: var(--font-size-xs);
+  color: var(--color-lightsteelblue-100);
+}
+.welcomeContent,
+.welcomeContentWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.welcomeContent {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.welcomeContentWrapper {
+  align-self: stretch;
+  justify-content: flex-start;
+  padding: 0 var(--padding-11xs);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-general-sans-variable);
+}
+@media screen and (max-width: 1050px) {
+  .welcomeContent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .welcomeBackAli {
+    font-size: var(--font-size-lgi);
+  }
+}

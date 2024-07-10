@@ -1,0 +1,137 @@
+.frameChild,
+.frameItem {
+  position: relative;
+  display: none;
+}
+.frameChild {
+  height: 126px;
+  width: 321px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gray-100);
+  max-width: 100%;
+}
+.frameItem {
+  height: 45px;
+  width: 45px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-skyblue);
+  z-index: 0;
+}
+.frameInner {
+  height: 14.1px;
+  width: 11.1px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: 14.9px;
+  left: 16px;
+  object-fit: contain;
+  z-index: 2;
+}
+.frameWrapper,
+.rectangleGroup {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rectangleGroup {
+  width: 45px;
+  height: 45px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-skyblue);
+  flex-direction: row;
+  position: relative;
+  z-index: 1;
+}
+.frameWrapper {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.firstDot,
+.totalIncome {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.totalIncome {
+  min-width: 93px;
+}
+.firstDot {
+  height: 32px;
+  flex: 1;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.rectangleDiv {
+  height: 23px;
+  width: 63px;
+  position: relative;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-mediumseagreen-200);
+  display: none;
+}
+.secondDot {
+  position: relative;
+  display: inline-block;
+  min-width: 41px;
+  z-index: 2;
+}
+.rectangleContainer {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-mediumseagreen-200);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) var(--padding-3xs);
+  z-index: 1;
+}
+.separatorInner {
+  width: 63px;
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+  box-sizing: border-box;
+  font-size: var(--font-size-xs);
+  color: var(--color-mediumseagreen-100);
+  font-family: var(--font-inter);
+}
+.incomeOutcome,
+.rectangleParent,
+.separator,
+.separatorInner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.separator {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-14xl);
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+}
+.incomeOutcome,
+.rectangleParent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-11xs);
+}
+.rectangleParent {
+  border-radius: var(--br-xl);
+  background-color: var(--color-gray-100);
+  flex-direction: row;
+  padding: var(--padding-18xl) var(--padding-5xl) var(--padding-14xl);
+  box-sizing: border-box;
+  gap: var(--gap-4xl);
+  min-width: 209px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-lightslategray-100);
+  font-family: var(--font-general-sans-variable);
+}
+@media screen and (max-width: 450px) {
+  .firstDot {
+    font-size: var(--font-size-lgi);
+  }
+}
